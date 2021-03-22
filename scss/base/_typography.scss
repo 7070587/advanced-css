@@ -48,10 +48,10 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
 
     // 將區塊内的文字作為裁剪範圍向外裁剪，文字的背景就是區塊的背景，文字之外的區域都會被裁剪掉。需要搭配color:transparent使用。
     // set the background to text, then clear background, need use color:transparent at the same time
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 0.2rem;
