@@ -19,7 +19,7 @@
 
         border-radius: 4px;
         overflow: hidden;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+        box-shadow: $box-shadow-2;
 
         &--front {
             background-color: $color-white;
