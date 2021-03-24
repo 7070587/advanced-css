@@ -1,0 +1,61 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-black, 0.8);
+    z-index: 2000;
+
+    &__content {
+        @include absoluteCenter;
+        width: 75%;
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+        border-radius: 4px;
+
+        display: table;
+        overflow: hidden;
+    }
+
+    &__left {
+        width: calc(100% / 3);
+
+        /*
+        讓多個div等高與區塊內元素垂直置中
+        display: table;
+        display: table-cell;
+        vertical-align: middle;
+        */
+        display: table-cell;
+    }
+
+    &__right {
+        width: calc((100% / 3) * 2);
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-bottom: 4rem;
+
+        // define number of column
+        column-count: 2;
+
+        // space between columns
+        column-gap: 4rem;
+
+        // border between columns border
+        column-rule: 1px solid $color-grey-light-2;
+
+        // 自動換行 for english
+        hyphens: auto;
+    }
+}
