@@ -1,7 +1,7 @@
 .header {
     height: 95vh;
     /* to right: from left to right bottom */
-    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../../img/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../../img/hero-small.jpg);
     background-size: cover;
     background-position: top;
 
@@ -13,6 +13,12 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     position: relative;
+
+    // teach: https://www.oxxostudio.tw/articles/201810/css-media-queries.html
+    // in condition (min-resolution: 192dpi) and (min-width: 600px) || (min-width: 2000px)
+    @media (min-resolution: 192dpi) and (min-width: $media-phone), (min-width: $media-2000px) {
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../../img/hero.jpg);
+    }
 
     @include respond(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
