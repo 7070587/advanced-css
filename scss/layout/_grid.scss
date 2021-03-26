@@ -3,6 +3,10 @@
     // background-color: #eee;
     margin: 0 auto;
 
+    @include respond(tab-land) {
+        padding: 0 5rem;
+    }
+
     @include respond(tab-port) {
         max-width: 50rem;
         // margin: 0 auto;

@@ -843,6 +843,11 @@ body {
   max-width: 114rem;
   margin: 0 auto;
 }
+@media (max-width: 75em) {
+  .row {
+    padding: 0 5rem;
+  }
+}
 @media (max-width: 56.25em) {
   .row {
     max-width: 50rem;
@@ -937,8 +942,13 @@ body {
 .footer {
   background-color: #333;
   color: #f7f7f7;
-  padding: 10rem 0;
+  padding: 10rem 5rem;
   font-size: 1.4rem;
+}
+@media (max-width: 75em) {
+  .footer {
+    padding: 8rem;
+  }
 }
 @media (max-width: 56.25em) {
   .footer {
