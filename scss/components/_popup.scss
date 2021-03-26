@@ -11,6 +11,12 @@
     visibility: hidden;
     transition: all 0.3s;
 
+    @supports (backdrop-filter: blur(10px)) {
+        // teach: https://wcc723.github.io/development/2020/10/12/frosted-glass/
+        backdrop-filter: blur(10px);
+        background-color: rgba($color-black, 0.5);
+    }
+
     &__content {
         @include absoluteCenter;
         width: 75%;
