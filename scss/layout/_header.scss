@@ -17,8 +17,9 @@
     // teach: https://www.oxxostudio.tw/articles/201810/css-media-queries.html
     // in condition (min-resolution: 192dpi) and (min-width: 600px) || (min-width: 2000px)
     @media (min-resolution: 192dpi) and (min-width: $media-phone),
-        (-webkit-min-device-pixel-ratio: 2) and (min-width: $media-phone),  // for safari
+        (-webkit-min-device-pixel-ratio: 2) and (min-width: $media-phone),
         (min-width: $media-2000px) {
+        // for safari
         background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url(../../img/hero.jpg);
     }
 
