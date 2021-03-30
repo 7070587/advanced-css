@@ -1,6 +1,6 @@
 {
     "name": "natours",
-    "version": "1.0.0",
+    "version": "1.00.00",
     "description": "Landing page for natours",
     "main": "index.js",
     "scripts": {
@@ -13,14 +13,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/7070587/advanced-css.git"
+        "url": "https://github.com/7070587/natours"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/7070587/advanced-css/issues"
+        "url": "https://github.com/7070587/natours/issues"
     },
-    "homepage": "https://github.com/7070587/advanced-css#readme",
+    "homepage": "https://github.com/7070587/natours#readme",
     "devDependencies": {
         "autoprefixer": "^10.2.4",
         "concat": "^1.0.3",
